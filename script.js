@@ -1,3 +1,5 @@
+const audio = document.createElement("audio");
+audio.src = "buttonClick.mp3";
 //Change Color Effect
 const colbtn = document.querySelector(".col-btn");
 
@@ -7,6 +9,7 @@ colbtn.addEventListener("click", () => {
     let blue = Math.floor(Math.random() * 255);
     let actiondiv = document.querySelector(".action-div");
     actiondiv.style.backgroundColor = `rgb(${red},${green},${blue})`;
+    audio.play();
 })
 
 //Change Shapes Effect
@@ -19,4 +22,5 @@ shapebtn.addEventListener("click", () =>{
     shapeBox.classList.remove(...shapeArr);
     arrIndex = (arrIndex + 1) % shapeArr.length;
     shapeBox.classList.add(shapeArr[arrIndex]);
+    audio.play();
 })
