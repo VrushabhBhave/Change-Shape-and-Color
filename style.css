@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 244, 244)
+}
+
+.wrapper .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.wrapper .container .action-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 40px;
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem 0;
+    border-radius: 50%;
+    background-color: green;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .container i{
+    font-size: 5rem;
+    color: white;
+}
+
+.wrapper .container .button-div button{
+    padding: 0.8rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+}
+
+.wrapper .container .button-div button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* SHAPES CLASSES */
+.square {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.oval {
+    height: 60px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.trapezoid {
+	border-bottom: 50px solid white;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 125px;
+}
+
+.rectangle {
+    height: 50px;
+    width: 100px;
+    background-color: white;
+}
+
+.parallelogram {
+	width: 100px;
+	height: 50px;
+	transform: skew(20deg);
+	background: white;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 65px solid white;
+}
+
+.diamond {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: white;
+    position: relative;
+    top: -50px;
+}
+.diamond:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: white;
+}
+
+.pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-top: 50px solid white;
+    border-left: 50px solid white;
+    border-bottom: 50px solid white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.star {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.left-point {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.cross {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.frame {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.arrow {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
